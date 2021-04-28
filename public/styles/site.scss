@@ -1,0 +1,28 @@
+@import "bootstrap/bootstrap";
+
+@import "site/variables";
+@import "site/fonts";
+@import "site/home";
+@import "site/navbar";
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+   	text-rendering: optimizeLegibility !important;
+    font-weight: bolder !important;
+        max-width: 100vw;
+    overflow-x:hidden;
+}
+
+body{
+	background-color:$color_white;
+	text-rendering: optimizeLegibility !important;
+    font-weight: bolder !important;
+    max-width: 100vw;
+    overflow-x:hidden;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}

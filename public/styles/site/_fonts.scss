@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "GTSectraDisplay-Light";
+  src: url("/fonts/GT-Sectra-Display-Light.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/GT-Sectra-Display-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/fonts/GT-Sectra-Display-Light.otf") format("opentype"), /* Open Type Font */
+    url("/fonts/GT-Sectra-Display-Light.svg") format("svg"), /* Legacy iOS */
+    url("/fonts/GT-Sectra-Display-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/fonts/GT-Sectra-Display-Light.woff") format("woff"), /* Modern Browsers */
+    url("/fonts/GT-Sectra-Display-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Canela-Regular";
+  src: url("/fonts/Canela-Regular.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/Canela-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/fonts/Canela-Regular.otf") format("opentype"), /* Open Type Font */
+    url("/fonts/Canela-Regular.svg") format("svg"), /* Legacy iOS */
+    url("/fonts/Canela-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/fonts/Canela-Regular.woff") format("woff"), /* Modern Browsers */
+    url("/fonts/Canela-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.title{
+  font-family: "GTSectraDisplay-Light";
+  font-size: 120px;
+  line-height: 120px;
+  font-weight: 200;
+  color: $color_dark;
+  @media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+      font-size: 60px;
+      line-height: 60px;
+
+  }
+}
+
+.sub_title{
+  font-family: "Canela-Regular";
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 300;
+  color: $color_dark;
+  @media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+      font-size: 22px;
+      line-height: 26px;
+
+  }
+}
+
+.main_info{
+  font-family: "Canela-Regular";
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+  color: $color_dark;
+  @media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+      font-size: 20px;
+      line-height: 24px;
+  }
+}
+
+.body{
+  font-family: "Canela-Regular";
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: $color_dark;
+  @media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+      font-size: 16px;
+      line-height: 20px;
+  }
+}
+
+.nav_text{
+  font-family: "Canela-Regular";
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: $color_dark;
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration:none;
+  }
+}
+
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

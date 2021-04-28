@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Ana & Luis</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link href="/styles/site.css" rel="stylesheet">
+
+		<script src="/js/grained.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<link rel="shortcut icon" href="/Favicon.png" type="image/x-icon">
+
+		{{!-- This file provides the default styling for the KeystoneJS Content Editor
+			- only renders when user is logged in and admin--}}
+		{{{isAdminEditorCSS user}}}
+
+		{{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+		//- Safely remove this block if you are not targeting IE8 --}}
+		<!--[if lt IE 9]>
+			<script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js"></script>
+			<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<script type="text/javascript">
+			console.clear();
+			console.log("++++++++++++");
+			console.log("Made with 💖 by www.ortizestefanell.com");
+			console.log("++++++++++++");
+		</script>
+
+		
+	</head>
+	<body>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+		<div id="body">
+			<div id="Noise_filter" style=" 
+    		top:0; 
+    		left: 0;
+    		width: 100%;
+    		height: 100vh;
+    		position: fixed !important;
+    		z-index: 9000;
+    		pointer-events: none;
+    		opacity: 0.7;
+    		mix-blend-mode: multiply">
+    
+    	<div id="container_Noise" style="width: 100vw; height: 100vh; position: relative; overflow: hidden;">
+    	</div>
+    
+    	<script type="text/javascript">
+    		//http://sarathsaleem.github.io/grained/
+    		var options = {
+    		  "animate": true,
+    		  "patternWidth": 230,
+    		  "patternHeight": 230,
+    		  "grainOpacity": 0.16,
+    		  "grainDensity": 1,
+    		  "grainWidth": 0.7,
+    		  "grainHeight": 1
+    		}
+    
+    		grained("#container_Noise", options);
+    	</script>
+    </div>
+
+		<script>
+		AOS.init({
+		  // Global settings:
+		  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+		  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+		  initClassName: 'aos-init', // class applied after initialization
+		  animatedClassName: 'aos-animate', // class applied on animation
+		  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+		  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+		  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+		  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+		  
+
+		  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+		  offset: -600, // offset (in px) from the original trigger point
+		  delay: 0, // values from 0 to 3000, with step 50ms
+		  duration: 1600, // values from 0 to 3000, with step 50ms
+		  easing: 'ease', // default easing for AOS animations
+		  once: false, // whether animation should happen only once - while scrolling down
+		  mirror: false, // whether elements should animate out while scrolling past them
+		  anchorPlacement: 'top', // defines which position of the element regarding to window should trigger the animation
+		});			
+		</script>
+
+			<!--
+				Flash messages allow you to display once-off status messages to users, e.g. form
+				validation errors, success messages, etc
+			-->
+			{{#if messages}}
+			<div id="flash-messages" class="container">
+				{{#if messages.info}}
+				<div class="alert alert-info">
+						{{{flashMessages messages.info}}}
+				</div>
+				{{/if}}
+				{{#if messages.success}}
+				<div class="alert alert-success">
+						{{{flashMessages messages.success}}}
+				</div>
+				{{/if}}
+				{{#if messages.warning}}
+				<div class="alert alert-warning">
+						{{{flashMessages messages.warning}}}
+				</div>
+				{{/if}}
+				{{#if messages.error}}
+				<div class="alert alert-danger">
+						{{{flashMessages messages.error}}}
+				</div>
+				{{/if}}
+			</div>
+			{{/if}}
+			<!-- The content block should contain the body of your template's content-->
+			{{{body}}}
+			
+		</div>
+		
+		{{!--
+			//- jQuery 1.11.3 is included by default, and required by both Bootstrap
+			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
+			//- you can upgrade to 2.1.4 (also bundled) for better performance.
+		--}}
+		<script src="/js/jquery/jquery-1.11.3.min.js"></script>
+		{{{isAdminEditorJS user}}}
+
+	</body>
+</html>

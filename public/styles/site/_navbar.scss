@@ -1,0 +1,30 @@
+#navbar-container{
+	z-index: 100;
+	width: 100vw;
+	height: 10vh;
+	background-color: $color_white;
+	display: block;
+	text-align: center;
+	margin: auto;
+	position: fixed;
+	top: 0;
+	box-shadow: 1px 2px 12px 0px rgba(0,0,0,0);
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		display: none;
+	}
+}
+
+#navbar-ul{
+	display: table-cell;
+	width: 100vw;
+	height: 10vh;
+	li{
+		display: inline-table;
+		padding: 4vh 25px;
+		transition: $speed;
+		&:hover{
+			opacity:0.2;
+			transition: $speed;
+		}
+	}
+}

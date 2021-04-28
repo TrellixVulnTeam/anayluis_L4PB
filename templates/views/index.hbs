@@ -1,0 +1,12 @@
+<script type="text/javascript">
+            var userLang = navigator.language || navigator.userLanguage; 
+            //alert ("The language is: " + userLang);
+            if(userLang != 'es-ES'){
+                window.location.href = "/en"
+            }
+            if(userLang == 'es-ES' || userLang == 'es' || userLang == 'ES'){
+                window.location.href = "/es"
+            }else{
+                window.location.href = "/en"
+            }
+</script>

@@ -666,6 +666,17 @@
 	}
 }
 
+#transports-info_D{
+	width: 80%;
+	margin-left: 10%;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		width: 70%;
+		margin-top: 50px;
+		margin-left: 15%;
+	}
+}
+
+
 
 /*  REGALOS ---------------- */
 

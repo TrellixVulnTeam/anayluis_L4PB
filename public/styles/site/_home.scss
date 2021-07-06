@@ -669,10 +669,22 @@
 #transports-info_D{
 	width: 80%;
 	margin-left: 10%;
+	p{
+        width: 50%;
+        margin-left: 25%;
+        text-align: center;
+	}
+
 	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
 		width: 80%;
 		margin-top: 50px;
 		margin-left: 10%;
+
+		p{
+		    width: 80%;
+		    margin-left: 10%;
+		    text-align: center;
+		}
 	}
 }
 
